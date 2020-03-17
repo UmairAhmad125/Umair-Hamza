@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="styleseet" href="css/style.css" />
+   <style>
+    @media screen and (max-width: 600px) {
+        body {
+         background-color: blue;
+      }
+   }
+   #header-div{
+       display:flex;
+   }
+   </style>
+    
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
@@ -16,29 +27,42 @@
         </div>
         <nav id = "nav-bar">
             <ul>
-                <li class= "nav-link">
-                    <a href="#It_Works"
+                <li >
+                    <a  class= "nav-link" href="#It-Works"
                     >It Works</a>
 
                 </li>
-                <li class= "nav-link">
-                    <a href="#Quote"
+                <li >
+                    <a  class= "nav-link" href="#Quote"
                     >Quote</a>
 
                 </li>
-                <li class= "nav-link">
-                    <a href="#Pricing"
+                <li >
+                    <a  class= "nav-link" href="#Pricing"
                     >Pricing</a>
 
                 </li>
             </ul>
         </nav>
     </header>
-    <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" ></iframe>
-    <form id="form">
-        <input type="text" id="email" placeholder="Enter your email">
-    </form>
+    <div id="It-Works">
 
+            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" ></iframe>
+        <form id="form" action="https://www.freecodecamp.com
+        /email-submit">
+            <input type="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`
+            {|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" id="email"
+            name="email" 
+            placeholder="Enter your email" required/>
+            <input type="submit" id ="submit"/>
+        </form>
+    </div>
+    <div id="Quote">
+
+    </div>
+    <div id="Pricing">
+
+    </div>
     <script  src="js/index.js"></script>
 </body>
 </html>
